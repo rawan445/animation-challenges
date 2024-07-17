@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AnimatedSpiral from "./animated-banners-slider";
+import AnimatedSpiral from "./Animated-spiral";
 export enum DirectionEnum {
   LTR = 'ltr',
   RTL = 'rtl',

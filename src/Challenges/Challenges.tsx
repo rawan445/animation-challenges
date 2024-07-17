@@ -1,7 +1,8 @@
 import LikeButton from "./like-button/like-button";
 import Loaders from "./loaders/Loaders";
-import SearchButton from "./search-button-second-challenge/search-button";
-import SliderImages from "./slider-images-first-challenge/Banners-slider";
+import SearchButton from "./search-button-second-challenge/SearchButton";
+import SliderImages from "./slider-images-first-challenge/Slider-Images";
+
 
 
 const Challenges = () => {
@@ -19,7 +20,7 @@ const Challenges = () => {
             <LikeButton />
             <hr className="border-t-2 border-gray-600 w-full my-5" />
             <p className='text-white items-center py-5'></p>
-            <Loaders/>
+            <Loaders />
         </div>
     );
 }

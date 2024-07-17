@@ -1,18 +1,10 @@
 
-import {  motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const Loaders = () => {
     const [position, setPosition] = useState(0);
     const sequence = [0, 2, 3, 4, 5, 6, 7, 8];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setPosition((prevPosition) => (prevPosition + 1) % sequence.length);
-        }, 600);
-
-        return () => clearInterval(interval);
-    }, []);
 
     const Star = [
         { x: 0, y: 0 },
@@ -85,6 +77,15 @@ const Loaders = () => {
     //     { x: 0, y: 0 },
     //     { x: 0, y: 0 },
     // ]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPosition((prevPosition) => (prevPosition + 1) % sequence.length);
+        }, 600);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="w-screen h-screen flex justify-center items-center">
 

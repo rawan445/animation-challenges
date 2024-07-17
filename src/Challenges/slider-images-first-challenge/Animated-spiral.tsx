@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { DirectionEnum } from './Banners-slider';
-import './Animated-banners-slider.css';
+import { DirectionEnum } from './Slider-Images';
+import './Animated-spiral.css';
 
 export interface AnimatedSpiralProps {
     animationDirection: DirectionEnum | undefined
